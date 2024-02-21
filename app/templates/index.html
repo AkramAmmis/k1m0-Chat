@@ -1,0 +1,28 @@
+{% extends "bases.html" %}
+
+{% block body %}
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <div class="card">
+      <div class="card-body">
+
+        <center>
+          <img class=homeImg" src="{{ url_for('static', filename='images/chatImg.jpeg')}}" style="height: 200px; border-radius: 20px;">
+        </center>
+        <br>
+        <h1 class="text-center mb-4">Welcome to k1m0-Chat</h1>
+        <p class="text-center">Please log in or register to continue.</p>
+        <div class="text-center mt-4">
+          <a href="login.html" class="btn btn-primary mx-2">Login</a>
+          <a href="register.html" class="btn btn-success mx-2">Register now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const socket = io();
+</script>
+
+{% endblock %}
